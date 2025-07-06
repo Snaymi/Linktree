@@ -30,6 +30,8 @@ a {
 a:hover{
     background-image: url('background/background.gif');
     color: rgb(0, 0, 0);
+    transform: scale(1.1);
+    transition: 300ms;
 }
 
 .content{
