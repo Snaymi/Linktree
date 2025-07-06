@@ -1,0 +1,49 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    padding:0;
+    /*remove the margin and padding from 
+    defaut browser*/
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.social-media .linkedin{
+    color: black;
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 5px;
+    background: rgb(65, 99, 194);
+    font-family: cursive;
+}
+.social-media .git{
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 5px;
+    background: rgb(0, 0, 0);
+    font-family: cursive;
+}
+.social-media .wpp{
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    background: rgb(55, 248, 97);
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+     font-family: cursive;
+}
+.social-media{
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    background: white;
+    width: 300px;
+    border: 2px solid rgba(1, 60, 78, 0.459);
+    border-radius: 5px;
+}
