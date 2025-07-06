@@ -9,8 +9,8 @@ body{
     padding:0;
     /*remove the margin and padding from 
     defaut browser*/
-    background: black;
-    color: white;
+    background: #212661;
+    background: linear-gradient(34deg, rgba(33, 38, 97, 1) 0%, rgba(136, 138, 159, 1) 50%, rgba(33, 38, 97, 1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +38,8 @@ a:hover{
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+    background: #BDC2F3;
+    background: linear-gradient(34deg, rgba(189, 194, 243, 1) 0%, rgba(129, 137, 231, 1) 50%, rgba(189, 194, 243, 1) 100%);
     padding: 30px;
     border-radius: 10px;
     border: 2px solid rgba(0, 68, 255, 0.475);
