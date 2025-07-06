@@ -17,6 +17,9 @@ body{
     flex-direction: column;
     font-family: 'Lato', sans-serif;
 }
+p {
+    margin: 5px;
+}
 a {
     text-decoration: none;
     cursor: pointer;
@@ -46,7 +49,7 @@ a:hover{
     border-radius: 10px;
     border: 2px solid rgba(0, 68, 255, 0.475);
     box-shadow: 0 0 10px rgba(115, 123, 231, 0.993);
-    height: 500px;
+    height: 550px;
 }
 .name{
     font-size: 60px;
