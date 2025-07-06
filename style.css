@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-BoldItalic.ttf') format('truetype');
+}
 body{
     width: 100vw;
     height: 100vh;
@@ -11,39 +15,90 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: 'Lato', sans-serif;
 }
-.social-media .linkedin{
+a {
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333232;
+    background: linear-gradient(34deg, rgba(51, 50, 50, 1) 0%, rgba(79, 84, 92, 1) 50%, rgba(13, 13, 36, 1) 100%);
+
+}
+a:hover{
+    background-image: url('background/background.gif');
+    color: rgb(0, 0, 0);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 68, 255, 0.475);
+    box-shadow: 0 0 10px rgba(115, 123, 231, 0.993);
+    height: 500px;
+}
+.name{
+    font-size: 60px;
+    color:  black;
+}
+.objective{
+    font-size: 30px;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
     color: black;
-    border: 1px solid white;
-    padding: 3px;
-    border-radius: 5px;
-    background: rgb(65, 99, 194);
-    font-family: cursive;
 }
-.social-media .git{
+
+.small-icon {
+    font-size: 30px;
+    padding: 0 0 0 5px;
+}
+.linkedin{
     color: rgb(255, 255, 255);
     border: 1px solid white;
-    padding: 3px;
+    margin: 5px;
     border-radius: 5px;
-    background: rgb(0, 0, 0);
-    font-family: cursive;
+    background: #0a1547;
+background: linear-gradient(34deg, rgba(10, 21, 71, 1) 0%, rgba(4, 8, 33, 1) 50%, rgba(1, 26, 66, 1) 100%);
 }
-.social-media .wpp{
-    padding: 5px;
-    display: flex;
-    justify-content: space-evenly;
-    background: rgb(55, 248, 97);
-    color: black;
-    border: 2px solid rgb(0, 0, 0);
+
+.git{
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    margin: 5px;
     border-radius: 5px;
-     font-family: cursive;
 }
+.wpp{
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    margin: 5px;
+    border-radius: 5px;
+background: #0a473b;
+background: linear-gradient(34deg, rgba(10, 71, 59, 1) 0%, rgba(4, 25, 33, 1) 50%, rgba(1, 50, 54, 1) 100%);}
 .social-media{
     padding: 5px;
     display: flex;
     justify-content: space-evenly;
-    background: white;
+    flex-direction: column;
+    background-image: url('background/social-media.gif');
+    background-size: cover;
     width: 300px;
     border: 2px solid rgba(1, 60, 78, 0.459);
     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(115, 123, 231, 0.993);
+}
+.img-profile{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid rgba(1, 60, 78, 0.459);
+    box-shadow: 0 0 10px rgba(115, 123, 231, 0.993);
 }
