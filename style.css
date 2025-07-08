@@ -6,6 +6,10 @@
     font-family: 'Poppins';
     src: url('fonts/Poppins-black.ttf') format('truetype');
 }
+*{
+    box-sizing: border-box;
+    
+}
 body{
     width: 100vw;
     height: 100vh;
@@ -130,6 +134,7 @@ body{
     border-radius: 50%;
     border: 3px solid rgba(1, 60, 78, 0.459);
     box-shadow: 0 0 15px rgba(36, 46, 186, 0.993);
+    margin:10px;
 }
 .developer{
     font-size: 15px;
