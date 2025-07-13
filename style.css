@@ -11,18 +11,15 @@
     
 }
 body{
-    width: 100vw;
-    height: 100vh;
+
+   height: 100vh;
     margin:0;
     padding:0;
     /*remove the margin and padding from 
     defaut browser*/
     background: #212661;
     background: linear-gradient(34deg, rgba(33, 38, 97, 1) 0%, rgba(136, 138, 159, 1) 50%, rgba(33, 38, 97, 1) 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
     font-family: 'Lato', sans-serif;
 }
 
@@ -52,10 +49,7 @@ body{
     box-shadow: 0 0 20px rgba(1, 18, 255, 0.993);
 }
 .content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
     text-align: center;
     background: #BDC2F3;
     background: linear-gradient(34deg, rgba(189, 194, 243, 1) 0%, rgba(129, 137, 231, 1) 50%, rgba(189, 194, 243, 1) 100%);
@@ -63,7 +57,9 @@ body{
     border-radius: 10px;
     border: 2px solid rgba(0, 68, 255, 0.475);
     box-shadow: 0 0 10px rgba(115, 123, 231, 0.993);
-    height: 550px;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .name{
     font-size: 60px;
@@ -126,7 +122,16 @@ body{
     box-shadow: 0 0 20px rgba(0, 17, 255, 0.993);
     
 }
-.img-profile{
+.box-img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+        margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+.profile-anime, .profile-img{
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -134,7 +139,28 @@ body{
     border-radius: 50%;
     border: 3px solid rgba(1, 60, 78, 0.459);
     box-shadow: 0 0 15px rgba(36, 46, 186, 0.993);
-    margin:10px;
+    position: absolute;
+    display: block;
+}
+.profile-anime{
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 700ms ease;
+}
+.profile-anime:hover{
+    opacity: 0;
+    z-index: 0;
+}
+.profile-img{
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 700ms ease;
+}
+.profile-img:hover{
+    opacity: 1;
+    transform: scale(1.2);
+    box-shadow: 0 0 25px rgba(36, 46, 186, 0.993);
+    z-index: 2;
 }
 .developer{
     font-size: 15px;
@@ -142,6 +168,7 @@ body{
     padding: 5px;
     color: rgba(40, 52, 219, 0.637);
     font-family: 'Poppins', sans-serif;
+    display: block;
 }
 .developer:hover{
     color:rgb(19, 167, 204);
